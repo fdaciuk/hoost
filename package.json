@@ -1,0 +1,25 @@
+{
+  "name": "hoost",
+  "version": "0.0.1",
+  "description": "Easily manage your virtual hosts",
+  "main": "lib/hoost.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdaciuk/hoost.git"
+  },
+  "keywords": [
+    "virtual",
+    "host",
+    "host",
+    "vhost"
+  ],
+  "author": "Fernando Daciuk <f.daciuk+npmjs@gmail.com> (http://da2k.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdaciuk/hoost/issues"
+  },
+  "homepage": "https://github.com/fdaciuk/hoost"
+}
