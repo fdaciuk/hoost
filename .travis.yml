@@ -3,8 +3,7 @@ node_js:
   - "0.10"
   - "0.11"
   - "0.12"
-  - "io.js
+  - "io.js"
 
 before_install:
-  - npm install -g gulp mocha
-  - npm i
+  - npm i -g gulp mocha
