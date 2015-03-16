@@ -7,3 +7,4 @@ node_js:
 
 before_install:
   - npm install -g gulp mocha
+  - npm i
