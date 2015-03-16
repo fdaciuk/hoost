@@ -17,6 +17,7 @@ gulp.task( 'test', function( cb ) {
     .on( 'finish', function() {
       gulp.src([ './tests/**/*.js', './lib/hoost.js' ])
       .pipe( mocha() )
+      .on( 'error', cb )
       .pipe( istanbul.writeReports() )
       .on( 'end', cb );
     });
