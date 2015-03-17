@@ -13,7 +13,7 @@ npm i -g hoost
 
 ## How to use
 
-### `add`
+### `add [ip] [host]`
 
 Add host on `/etc/hosts`.
 
