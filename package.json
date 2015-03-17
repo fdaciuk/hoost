@@ -1,6 +1,6 @@
 {
   "name": "hoost",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Easily manage your virtual hosts",
   "main": "lib/hoost.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "url": "https://github.com/fdaciuk/hoost/issues"
   },
   "homepage": "https://github.com/fdaciuk/hoost",
+  "preferGlobal": true,
   "bin": {
     "hoost": "lib/hoost.js"
   },
