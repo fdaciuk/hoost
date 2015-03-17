@@ -15,7 +15,7 @@ npm i -g hoost
 
 ### `add <ip> <host>`
 
-Add host on `/etc/hosts`.
+Add a host in `/etc/hosts`.
 
 ```sh
 [sudo] hoost add 127.0.0.1 yourhost.com
