@@ -17,6 +17,7 @@ gulp.task( 'mocha', function() {
 
 gulp.task( 'test', function( cb ) {
   gulp.src( allFiles )
+    .on( 'err', cb )
     .pipe( istanbul() )
     .on( 'finish', function() {
       gulp.src( allFiles )
