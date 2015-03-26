@@ -15,7 +15,9 @@ describe( 'HOOST', function() {
   });
 
   it( 'Should add IP/HOST: 127.0.0.1 test.com.br in /etc/hosts', function( done ) {
-    exec( hoost + ' add 127.0.0.1 test.com.br && cat ./hosts', function( err, stdout, stderr ) {
+    exec( hoost + ' add 127.0.0.1 test.com.br', function( err, stdout, stderr ) {
+      if( err ) throw err;
+      stdout.should.match( /127.0.0.1 test.com.br saved!/ );
       done();
     });
   });
