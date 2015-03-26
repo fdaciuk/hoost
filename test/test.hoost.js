@@ -21,4 +21,12 @@ describe( 'HOOST', function() {
       done();
     });
   });
+
+  it( 'Should list content in /etc/hosts', function( done ) {
+    exec( hoost + ' list', function ( err, stdout, stderr ) {
+      if( err ) throw err;
+      stdout.should.match( /\/etc\/hosts content:/ );
+      done();
+    });
+  });
 });

@@ -21,6 +21,6 @@ gulp.task( 'test', function( cb ) {
     });
 });
 
-gulp.task( 'default', [ 'test' ], function() {
+gulp.task( 'default', function() {
   gulp.watch( allFiles, [ 'test' ] );
 });
