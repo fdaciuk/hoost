@@ -21,6 +21,14 @@ Add a host in `/etc/hosts`.
 [sudo] hoost add 127.0.0.1 yourhost.com
 ```
 
+### `list` [WIP]
+
+List all hosts in `/etc/hosts`.
+
+```sh
+sudo hoost list
+```
+
 [npm-version-image]: https://badge.fury.io/js/hoost.svg?style=flat
 [npm-version-url]: https://npmjs.org/package/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg
