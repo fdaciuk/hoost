@@ -11,7 +11,6 @@ describe( 'HOOST', function() {
     fs.readFile( hosts, function( err, data ) {
       if( err ) throw err;
       fs.writeFile( hosts, '', function() {
-        console.log( 'File ./hosts reseted!' );
         done();
       });
     });
