@@ -22,5 +22,6 @@ gulp.task( 'test', function( cb ) {
 });
 
 gulp.task( 'default', function() {
+  process.env.NODE_ENV = 'test';
   gulp.watch( allFiles, [ 'test' ] );
 });

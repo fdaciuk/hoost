@@ -4,8 +4,19 @@ var exec = require( 'child_process' ).exec;
 var should = require( 'should' );
 var pkg = require( '../package.json' );
 var hoost = './lib/hoost.js';
+var hosts = './hosts';
 
 describe( 'HOOST', function() {
+  before(function( done ) {
+    fs.readFile( hosts, function( err, data ) {
+      if( err ) throw err;
+      fs.writeFile( hosts, '', function() {
+        console.log( 'File ./hosts reseted!' );
+        done();
+      });
+    });
+  });
+
   it( 'Should returns hoost version', function( done ) {
     exec( hoost + ' --version', function( err, stdout, stderr ) {
       if( err ) throw err;

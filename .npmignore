@@ -2,6 +2,7 @@
 .editorconfig
 .travis.yml
 gulpfile.js
+hosts
 npm_debug.log
 LICENSE
 test/
