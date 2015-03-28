@@ -9,6 +9,7 @@ var coreFiles = './lib/*.js';
 var allFiles = [ testFiles, coreFiles ];
 
 gulp.task( 'test', function( cb ) {
+  process.env.NODE_ENV = 'test';
   gulp.src( allFiles )
     .on( 'err', cb )
     .pipe( istanbul() )
@@ -21,7 +22,6 @@ gulp.task( 'test', function( cb ) {
     });
 });
 
-gulp.task( 'default', function() {
-  process.env.NODE_ENV = 'test';
+gulp.task( 'default', [ 'test' ], function() {
   gulp.watch( allFiles, [ 'test' ] );
 });

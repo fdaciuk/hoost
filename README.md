@@ -29,6 +29,14 @@ List all hosts in `/etc/hosts`.
 hoost list
 ```
 
+### [WIP] - `remove <ip> <host>`
+
+Remove a host in `/etc/hosts`.
+
+```sh
+sudo hoost rm 127.0.0.1 yourhost.com
+```
+
 [npm-version-image]: https://badge.fury.io/js/hoost.svg?style=flat
 [npm-version-url]: http://badge.fury.io/js/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg

@@ -1,9 +1,12 @@
+coverage/
+test/
+node_modules/
 .coveralls.yml
 .editorconfig
+.gitignore
+.jshintrc
 .travis.yml
+LICENSE
 gulpfile.js
 hosts
 npm_debug.log
-LICENSE
-test/
-coverage/

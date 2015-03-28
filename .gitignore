@@ -1,6 +1,6 @@
+coverage/
+node_modules/
+__MACOSX/
 .DS_Store
-__MACOSX
 .coveralls.yml
 npm-debug.log
-node_modules
-coverage
