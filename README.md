@@ -30,6 +30,6 @@ hoost list
 ```
 
 [npm-version-image]: https://badge.fury.io/js/hoost.svg?style=flat
-[npm-version-url]: https://npmjs.org/package/hoost
+[npm-version-url]: http://badge.fury.io/js/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg
 [travis-url]: https://travis-ci.org/fdaciuk/hoost
