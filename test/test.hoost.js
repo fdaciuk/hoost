@@ -39,5 +39,4 @@ describe( 'HOOST', function() {
       done();
     });
   });
-  });
 });
