@@ -37,6 +37,10 @@ Remove a host in `/etc/hosts`.
 [sudo] hoost rm 127.0.0.1 yourhost.com
 ```
 
+## License
+
+[MIT](https://github.com/fdaciuk/hoost/blob/master/LICENSE)
+
 [npm-version-image]: https://badge.fury.io/js/hoost.svg?style=flat
 [npm-version-url]: http://badge.fury.io/js/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg
