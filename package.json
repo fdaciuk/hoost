@@ -29,14 +29,14 @@
     "hoost": "lib/hoost.js"
   },
   "devDependencies": {
-    "colors": "^1.0.3",
     "gulp": "^3.8.11",
     "gulp-istanbul": "^0.6.0",
     "gulp-mocha": "^2.0.0",
-    "inquirer": "^0.8.2",
     "should": "^5.2.0"
   },
   "dependencies": {
-    "commander": "^2.7.1"
+    "colors": "^1.0.3",
+    "commander": "^2.7.1",
+    "inquirer": "^0.8.2"
   }
 }
