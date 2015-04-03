@@ -42,7 +42,7 @@ describe( 'HOOST', function() {
 
   it( 'Should remove IP/HOST: 127.0.0.1 test.com.br in /etc/hosts', function( done ) {
     exec( hoost + ' rm 127.0.0.1 test.com.br', function( err, stdout, stderr ) {
-      stdout.should.match( /You sure?/ );
+      stdout.should.match( /Are you sure?/ );
       done();
     });
   });
