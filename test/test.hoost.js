@@ -35,14 +35,14 @@ describe( 'HOOST', function() {
   it( 'Should list content in /etc/hosts', function( done ) {
     exec( hoost + ' list', function ( err, stdout, stderr ) {
       if( err ) throw err;
-      stdout.should.match( /\/etc\/hosts content:/ );
+      stdout.should.match( /\.\/hosts content:/ );
       done();
     });
   });
 
   it( 'Should remove IP/HOST: 127.0.0.1 test.com.br in /etc/hosts', function( done ) {
-    exec( hoost + ' rm 127.0.0.1 test.com.br', function( err, stdout, stderr ) {
-      stdout.should.match( /Are you sure?/ );
+    exec( hoost + ' rm 127.0.0.1 test.com.br -y', function( err, stdout, stderr ) {
+      stdout.should.match( /removed!/ );
       done();
     });
   });

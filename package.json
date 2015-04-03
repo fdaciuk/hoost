@@ -29,6 +29,7 @@
     "hoost": "lib/hoost.js"
   },
   "devDependencies": {
+    "colors": "^1.0.3",
     "gulp": "^3.8.11",
     "gulp-istanbul": "^0.6.0",
     "gulp-mocha": "^2.0.0",
