@@ -29,7 +29,7 @@ List all hosts in `/etc/hosts`.
 hoost list
 ```
 
-### [WIP] - `remove <ip> <host>`
+### `rm <ip> <host>`
 
 Remove a host in `/etc/hosts`.
 
