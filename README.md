@@ -2,9 +2,9 @@
 
 > Easily manage your virtual hosts
 
-<div style="text-align: center">
+<p align="center">
   <img src="hoost-logo.png" alt="Hoost" />
-</div>
+</p>
 
 [![NPM version][npm-version-image]][npm-version-url]
 [![Build Status][travis-image]][travis-url]
