@@ -11,12 +11,11 @@ var allFiles = [ testFiles, coreFiles ];
 gulp.task( 'test', function( cb ) {
   process.env.NODE_ENV = 'test';
   gulp.src( allFiles )
-    .on( 'err', cb )
     .pipe( istanbul() )
+    .pipe( istanbul.hookRequire() )
     .on( 'finish', function() {
-      gulp.src( allFiles )
+      gulp.src( testFiles )
       .pipe( mocha() )
-      .on( 'error', cb )
       .pipe( istanbul.writeReports() )
       .on( 'end', cb );
     });
