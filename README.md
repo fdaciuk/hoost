@@ -30,20 +30,20 @@ Add a host in `/etc/hosts`.
 [sudo] hoost add 127.0.0.1 yourhost.com
 ```
 
-### `list`
-
-List all hosts in `/etc/hosts`.
-
-```sh
-hoost list
-```
-
 ### `rm <ip> <host>`
 
 Remove a host in `/etc/hosts`.
 
 ```sh
 [sudo] hoost rm 127.0.0.1 yourhost.com
+```
+
+### `list`
+
+List all hosts in `/etc/hosts`.
+
+```sh
+hoost list
 ```
 
 ## License
