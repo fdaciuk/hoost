@@ -4,3 +4,10 @@ node_js:
 
 before_install:
   - "npm i -g gulp mocha"
+
+addons:
+  code_climate:
+    repo_token: 667c1be9002cf5c2dc01fe0ad7290948d46f93dc50cf61704b02118ce3e09620
+
+after_script:
+  - cat ./coverage/lcov.info | codeclimate
