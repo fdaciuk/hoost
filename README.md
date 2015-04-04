@@ -2,6 +2,8 @@
 
 > Easily manage your virtual hosts
 
+<img src="hoost-logo.png" alt="Hoost" align="center" />
+
 [![NPM version][npm-version-image]][npm-version-url]
 [![Build Status][travis-image]][travis-url]
 [![Coveralls Coverage Status][coverage-image]][coverage-url]
@@ -46,6 +48,7 @@ Remove a host in `/etc/hosts`.
 
 [MIT](https://github.com/fdaciuk/hoost/blob/master/LICENSE)
 
+[hoost-logo]: hoost-logo.png
 [npm-version-image]: https://badge.fury.io/js/hoost.svg?style=flat
 [npm-version-url]: http://badge.fury.io/js/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg
