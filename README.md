@@ -1,4 +1,4 @@
-# [WIP] hoost
+# hoost
 
 > Easily manage your virtual hosts
 
