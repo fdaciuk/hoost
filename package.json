@@ -1,6 +1,6 @@
 {
   "name": "hoost",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Easily manage your virtual hosts",
   "main": "lib/hoost.js",
   "scripts": {
