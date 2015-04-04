@@ -14,7 +14,7 @@
 [![NPM version][npm-version-image]][npm-package-url]
 [![NPM Downloads][npm-downloads-image]][npm-package-url]
 [![Dependencies][dependencies-image]][npm-package-url]
-[![License][license-image]][npm-package-url]
+[![License][license-image]][license-url]
 
 [![NPM][nodei-image]][nodei-url]
 
@@ -52,7 +52,7 @@ hoost list
 
 ## License
 
-[MIT](https://github.com/fdaciuk/hoost/blob/master/LICENSE)
+[MIT][license-url]
 
 [hoost-logo]: hoost-logo.png
 [npm-package-url]: https://www.npmjs.com/package/hoost
@@ -70,3 +70,4 @@ hoost list
 [nodei-url]: https://nodei.co/npm/hoost/
 [dependencies-image]: https://img.shields.io/david/fdaciuk/hoost.svg?style=flat-square
 [license-image]: https://img.shields.io/npm/l/hoost.svg?style=flat-square
+[license-url]: https://github.com/fdaciuk/hoost/blob/master/LICENSE
