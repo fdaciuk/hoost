@@ -4,7 +4,8 @@
 
 [![NPM version][npm-version-image]][npm-version-url]
 [![Build Status][travis-image]][travis-url]
-[![Coverage Status][coverage-image]][coverage-url]
+[![Coveralls Coverage Status][coverage-image]][coverage-url]
+[![Code Climate Coverage][codeclimate-coverage-image]][codeclimate-coverage-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
 [![NPM][nodei-image]][nodei-url]
@@ -49,9 +50,11 @@ Remove a host in `/etc/hosts`.
 [npm-version-url]: http://badge.fury.io/js/hoost
 [travis-image]: https://travis-ci.org/fdaciuk/hoost.svg
 [travis-url]: https://travis-ci.org/fdaciuk/hoost
-[nodei-image]: https://nodei.co/npm/hoost.png?downloads=true&downloadRank=true&stars=true
-[nodei-url]: https://nodei.co/npm/hoost/
-[codeclimate-image]: https://codeclimate.com/github/fdaciuk/hoost/badges/gpa.svg
-[codeclimate-url]: https://codeclimate.com/github/fdaciuk/hoost
 [coverage-image]: https://coveralls.io/repos/fdaciuk/hoost/badge.svg?branch=dev
 [coverage-url]: https://coveralls.io/r/fdaciuk/hoost?branch=dev
+[codeclimate-coverage-url]: https://codeclimate.com/github/fdaciuk/hoost
+[codeclimate-coverage-image]: https://codeclimate.com/github/fdaciuk/hoost/badges/coverage.svg
+[codeclimate-image]: https://codeclimate.com/github/fdaciuk/hoost/badges/gpa.svg
+[codeclimate-url]: https://codeclimate.com/github/fdaciuk/hoost
+[nodei-image]: https://nodei.co/npm/hoost.png?downloads=true&downloadRank=true&stars=true
+[nodei-url]: https://nodei.co/npm/hoost/
