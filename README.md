@@ -42,7 +42,7 @@ Remove a host in `/etc/hosts`.
 [sudo] hoost rm 127.0.0.1 yourhost.com
 ```
 
-### WIP - `edit <ip> <host> <newip> <newhost>`
+### `edit <ip> <host> <newip> <newhost>`
 
 Edit a entry in `/etc/hosts`.
 

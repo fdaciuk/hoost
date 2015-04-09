@@ -40,8 +40,17 @@ describe( 'HOOST', function() {
     });
   });
 
+  it( 'Should edit IP/HOST: 127.0.0.1 test.com.br to 127.0.0.1 mytest.com.br', function( done ) {
+    exec( hoost + ' edit 127.0.0.1 test.com.br 127.0.0.1 mytest.com.br -y && ' + hoost + ' list', function( err, stdout, stderr ) {
+      if( err ) throw err;
+      stdout.should.match( /127.0.0.1 mytest.com.br/gim );
+      done();
+    });
+  });
+
   it( 'Should remove IP/HOST: 127.0.0.1 test.com.br in /etc/hosts', function( done ) {
     exec( hoost + ' rm 127.0.0.1 test.com.br -y', function( err, stdout, stderr ) {
+      if( err ) throw err;
       stdout.should.match( /removed!/ );
       done();
     });
