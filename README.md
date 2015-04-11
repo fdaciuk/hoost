@@ -26,7 +26,7 @@ npm i -g hoost
 
 ## How to use
 
-### add <ip> <host>
+### add &lt;ip&gt; &lt;host&gt;
 
 > Add a host in `/etc/hosts`.
 
@@ -34,7 +34,7 @@ npm i -g hoost
 [sudo] hoost add 127.0.0.1 yourhost.com
 ```
 
-### rm <ip> <host>
+### rm &lt;ip&gt; &lt;host&gt;
 
 > Remove a host in `/etc/hosts`.
 
@@ -42,7 +42,7 @@ npm i -g hoost
 [sudo] hoost rm 127.0.0.1 yourhost.com
 ```
 
-### edit <ip> <host> <newip> <newhost>
+### edit &lt;ip&gt; &lt;host&gt; &lt;newip&gt; &lt;newhost&gt;
 
 > Edit a entry in `/etc/hosts`.
 
