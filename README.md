@@ -78,4 +78,4 @@ hoost list
 [nodei-url]: https://nodei.co/npm/hoost/
 [dependencies-image]: https://img.shields.io/david/fdaciuk/hoost.svg?style=flat-square
 [license-image]: https://img.shields.io/npm/l/hoost.svg?style=flat-square
-[license-url]: https://github.com/fdaciuk/hoost/blob/master/LICENSE
+[license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
