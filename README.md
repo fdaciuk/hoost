@@ -44,7 +44,7 @@ npm i -g hoost
 
 ### edit &lt;ip&gt; &lt;host&gt; &lt;newip&gt; &lt;newhost&gt;
 
-> Edit a entry in `/etc/hosts`.
+> Edit an entry in `/etc/hosts`.
 
 ```sh
 [sudo] hoost edit 127.0.0.1 yourhost.com 127.0.0.1 yournewhost.com
