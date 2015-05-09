@@ -60,7 +60,7 @@ hoost list
 
 ## License
 
-[MIT][license-url]
+[MIT][license-url] © Fernando Daciuk
 
 [hoost-logo]: hoost-logo.png
 [npm-package-url]: https://www.npmjs.com/package/hoost
