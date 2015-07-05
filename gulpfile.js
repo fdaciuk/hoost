@@ -19,7 +19,10 @@ gulp.task( 'test', function( cb ) {
       .on( 'error', function() {
         gulp.src( allFiles )
         .pipe( istanbul.writeReports() )
-        cb();
+        .on( 'end', function() {
+          cb();
+          process.exit(1);
+        })
       })
       .pipe( istanbul.writeReports() )
       .on( 'end', cb );
