@@ -10,11 +10,11 @@ var allFiles = [ testFiles, coreFiles ];
 
 gulp.task( 'test', function( cb ) {
   process.env.NODE_ENV = 'test';
-  gulp.src( allFiles )
+  gulp.src( coreFiles )
     .pipe( istanbul() )
     .pipe( istanbul.hookRequire() )
     .on( 'finish', function() {
-      gulp.src( testFiles )
+      gulp.src( allFiles )
       .pipe( mocha() )
       .on( 'error', cb )
       .pipe( istanbul.writeReports() )
@@ -22,6 +22,6 @@ gulp.task( 'test', function( cb ) {
     });
 });
 
-gulp.task( 'default', function() {
+gulp.task( 'default', [ 'test' ], function() {
   gulp.watch( allFiles, [ 'test' ] );
 });
