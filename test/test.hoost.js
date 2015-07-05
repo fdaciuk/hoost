@@ -32,6 +32,14 @@ describe( 'HOOST', function() {
     });
   });
 
+  it( 'Before to add, should ask if we want to really add an exist host in /etc/hosts', function( done ) {
+    exec( hoost + ' add 127.0.0.1 test.com.br', function( err, stdout, stderr ) {
+      if( err ) throw err;
+      stdout.should.match( /This host was added already\. Do you like to add again\?/ );
+      done();
+    });
+  });
+
   it( 'Should list content in /etc/hosts', function( done ) {
     exec( hoost + ' list', function ( err, stdout, stderr ) {
       if( err ) throw err;
