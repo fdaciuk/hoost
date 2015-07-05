@@ -58,6 +58,10 @@ npm i -g hoost
 hoost list
 ```
 
+## Contributing
+
+Check [CONTRIBUTING.md][contributing-url]
+
 ## License
 
 [MIT][license-url] © Fernando Daciuk
@@ -79,3 +83,4 @@ hoost list
 [dependencies-image]: https://img.shields.io/david/fdaciuk/hoost.svg?style=flat-square
 [license-image]: https://img.shields.io/npm/l/hoost.svg?style=flat-square
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
+[contributing-url]: CONTRIBUTING.md
