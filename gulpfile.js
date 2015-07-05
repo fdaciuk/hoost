@@ -16,7 +16,11 @@ gulp.task( 'test', function( cb ) {
     .on( 'finish', function() {
       gulp.src( allFiles )
       .pipe( mocha() )
-      .on( 'error', cb )
+      .on( 'error', function() {
+        gulp.src( allFiles )
+        .pipe( istanbul.writeReports() )
+        cb();
+      })
       .pipe( istanbul.writeReports() )
       .on( 'end', cb );
     });
