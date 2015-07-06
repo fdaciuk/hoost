@@ -13,5 +13,5 @@ addons:
     repo_token: sdo39R3MSYCe5mrrcxOSsar24Aq7PGubC
 
 after_script:
-  - codeclimate < ./coverage/lcov.info
+  - codeclimate < coverage/lcov.info
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
