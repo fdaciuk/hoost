@@ -4,8 +4,8 @@ var gulp = require( 'gulp' );
 var mocha = require( 'gulp-mocha' );
 var istanbul = require( 'gulp-istanbul' );
 
-var testFiles = './test/*.js';
-var coreFiles = './lib/*.js';
+var testFiles = 'test/*.js';
+var coreFiles = 'lib/*.js';
 var allFiles = [ testFiles, coreFiles ];
 
 gulp.task( 'test', function( cb ) {
@@ -21,7 +21,8 @@ gulp.task( 'test', function( cb ) {
         .pipe( istanbul.writeReports() )
         .on( 'end', function() {
           cb();
-          process.exit(1);
+          if( process.env.USER !== 'fernando' )
+            process.exit(1);
         })
       })
       .pipe( istanbul.writeReports() )
