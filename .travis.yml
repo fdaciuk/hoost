@@ -7,11 +7,9 @@ before_install:
   - "npm i --save coveralls mocha-lcov-reporter"
 
 addons:
-  code_climate:
-    repo_token: 667c1be9002cf5c2dc01fe0ad7290948d46f93dc50cf61704b02118ce3e09620
   coveralls:
     repo_token: sdo39R3MSYCe5mrrcxOSsar24Aq7PGubC
 
 after_script:
-  - "cat ./coverage/lcov.info | codeclimate"
+  - "CODECLIMATE_REPO_TOKEN=667c1be9002cf5c2dc01fe0ad7290948d46f93dc50cf61704b02118ce3e09620 codeclimate < ./coverage/lcov.info"
   - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
