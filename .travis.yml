@@ -3,8 +3,8 @@ node_js:
   - "0.12"
 
 before_install:
-  - "npm i -g gulp mocha"
-  - "npm i --save coveralls mocha-lcov-reporter"
+  - npm i --save coveralls mocha-lcov-reporter
+  - npm install -g codeclimate-test-reporter
 
 addons:
   code_climate:
@@ -13,5 +13,5 @@ addons:
     repo_token: sdo39R3MSYCe5mrrcxOSsar24Aq7PGubC
 
 after_script:
-  - codeclimate < coverage/lcov.info
+  - codeclimate-test-reporter < coverage/lcov.info
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
