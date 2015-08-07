@@ -15,18 +15,9 @@ gulp.task( 'test', function( cb ) {
     .pipe( istanbul.hookRequire() )
     .on( 'finish', function() {
       gulp.src( allFiles )
-      .pipe( mocha() )
-      .on( 'error', function() {
-        gulp.src( allFiles )
+        .pipe( mocha() )
         .pipe( istanbul.writeReports() )
-        .on( 'end', function() {
-          cb();
-          if( process.env.USER !== 'fernando' )
-            process.exit(1);
-        })
-      })
-      .pipe( istanbul.writeReports() )
-      .on( 'end', cb );
+        .on( 'end', cb );
     });
 });
 
