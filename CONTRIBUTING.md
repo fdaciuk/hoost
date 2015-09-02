@@ -1,7 +1,11 @@
 # Contributing
 
 - Fork it!
-- Create your feature branch: `git checkout -b my-new-feature`;
+- Create your feature branch, based on `dev`:
+
+```sh
+git checkout -b my-new-feature
+```
 
 ## Running
 
