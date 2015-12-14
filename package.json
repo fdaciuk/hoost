@@ -16,7 +16,7 @@
     "host",
     "vhost"
   ],
-  "author": "Fernando Daciuk <f.daciuk+npmjs@gmail.com> (http://da2k.com.br/)",
+  "author": "Fernando Daciuk (http://da2k.com.br/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fdaciuk/hoost/issues"
